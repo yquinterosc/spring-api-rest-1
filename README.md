@@ -1,12 +1,12 @@
-Laboratorio 7.1 : Spring API RESTful
+* Laboratorio 7.1 : Spring API RESTful *
 
 En este laboratorio se creará un servicio web RESTful con Spring Boot, usando Spring MVC, Spring JPA (Hibernate) y MySQL. Vamos a construir una API básica para gestionar "Productos"
-1.Crear el Proyecto
+** 1.Crear el Proyecto **
 Puedes usar Spring Initializr con estas dependencias:
-Spring Web
-Spring Data JPA 
-Driver MySql
-Lombok(Opcional)
+- Spring Web
+- Spring Data JPA 
+- Driver MySql
+- Lombok(Opcional)
 
 Crea los paquetes necesarios en el proyecto, el proyecto debe tener la siguiente estructura:
 
@@ -15,7 +15,7 @@ Crea los paquetes necesarios en el proyecto, el proyecto debe tener la siguiente
 2.Configuración en application.properties
 Configuramos la conexión con la base de datos para JPA
 
-
+```
 spring.application.name=servicioweb
 spring.datasource.url=jdbc:mysql://localhost:3306/negocios2026?useSSL=false&serverTimezone=UTC
 spring.datasource.username=root
@@ -23,6 +23,7 @@ spring.datasource.password=mysql
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
 
+```
 
     Importante!	Para este ejemplo la base de datos será negocios2025, la que debemos tener esta base de datos, iremos a MySql y ejecutar el comando:  create database negocios2025;
 
