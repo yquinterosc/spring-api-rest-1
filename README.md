@@ -24,14 +24,14 @@ spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
 
 ```
-*Importante!	Para este ejemplo la base de datos será negocios2025, la que debemos tener esta base de datos, iremos a MySql y ejecutar el comando:  ´create database negocios2025;´ *
+***Importante!***	*Para este ejemplo la base de datos será negocios2025, la que debemos tener esta base de datos, iremos a MySql y ejecutar el comando:*  `create database negocios2025;` *
 
-3.Entidades Producto
+**3.Entidades Producto**
 Creamos el paquete model y las entidades dentro de ella:
 Entidad Producto
 package com.ejemplo.servicioweb.model;
 
-
+```java
 import jakarta.persistence.*;
 import lombok.Data;
 @Data
@@ -46,9 +46,9 @@ public class Producto {
     @Column(nullable = false)
     private double precio;
 }
+```
 
-
-Importante!	@Entity: Indica que es una tabla en la BD. Y @Data (Lombok): Genera getters, setters, toString(), etc. automáticamente.
+***Importante!***	*@Entity: Indica que es una tabla en la BD. Y @Data (Lombok): Genera getters, setters, toString(), etc. automáticamente.*
 
 4.Repositorios
 Creamos el paquete repository y dentro de lel las clases repositorios:
