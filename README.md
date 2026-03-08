@@ -173,10 +173,11 @@ Para ingresar los datos de envío ubicarse en Body y raw; los datos a envias deb
 Mostramos si se inserto:
 
 ## e) DELETE /api/productos/{id}
+Para la eliminación de un registro el Id se envía por la url pero debe ser un verbo del tipo DELETE, por lo tanto también usaremos POSTMAN.
 
 ## Resumen
 En este laboratorio creamus una app con Spring boot, usamos JPA (Java Persistensi Api) para acceder a la base de datos MySql y el resultado creacion de servicios Web del tipo API Rest.
 Este ejemplo es lo basico para crear aplicaciones con microservicios.
 Observamos que Spring Boot implementa de una forma muy facil las APIs en los controladores.
-Para la eliminación de un registro el Id se envía por la url pero debe ser un verbo del tipo DELETE, por lo tanto también usaremos POSTMAN.
+
 
